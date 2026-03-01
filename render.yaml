@@ -1,0 +1,6 @@
+ services:
+  - type: web
+    name: anonub
+    env: node
+    plan: free
+    startCommand: npm install && npm audit fix --force && npm run build && node server.js
