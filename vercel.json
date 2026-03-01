@@ -17,6 +17,12 @@
     "BARE": "true",
     "STATIC": "false"
   },
-  "installCommand": "npm install && npm audit fix --force",
-  "buildCommand": "npm run build"
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "functions": {
+    "server.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  }
 }
